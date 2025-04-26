@@ -45,7 +45,8 @@ The notebook ```plot.ipynb``` generates figures based on the original results st
 ### Example
 An example of ROEHPE and benchmarks.
 
-![image info](./figs/display.png)
+![image info](./figs/comparison.png)
+![image info](./figs/comparison2.png)
 
 
 ## Acknowledgments
