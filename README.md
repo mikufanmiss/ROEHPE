@@ -27,7 +27,7 @@ bash run_experiments_dayahead.sh
 
 ```run_experiments_dayahead.sh```, ```experiments_twodayahead.sh```, ```run_experiments_weekahead.sh``` correspond to the 1-day-ahead, 2-day-ahead and 1-week-ahead forecasts, respectively.
 
-```Tao and RRH.ipynb``` and ```ROEHPE.ipynb``` 
+```Tao and RRH.ipynb``` and ```ROEHPE.ipynb``` are the codes for RRH Tao and ROEHPE, respectively.
 
 Note: There is NO multi-GPU/parallelling training in our codes. 
 
