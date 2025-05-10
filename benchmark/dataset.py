@@ -189,16 +189,6 @@ def GEFCom(double=False, window_width=24 * 7 * 2, observe_steps = 24 * 7, zone =
         (17.27 * ((df_ct['drybulb'] - 32 )/1.8) ) / (
             ((df_ct['drybulb'] - 32 )/1.8) + 237.3)).apply(math.exp) )
 
-    # df_ct['month'] = df_ct['ts'].apply(lambda x: x.month - 1)
-    # df_ct['week'] = df_ct['ts'].apply(lambda x: x.weekday())
-    # df_ct['hour'] = df_ct['ts'].apply(lambda x: x.hour)
-
-    # df_ct = df_ct[['demand', 'drybulb', 'RH', 'month', 'week', 'hour' ]]
-
-    # df_ct = pd.get_dummies(df_ct, columns = ['month', 'hour', 'week'])
-
-    # df_ct = df_ct.drop(columns=['month', 'hour', 'week'])
-
     df_ct = df_ct[['demand', 'drybulb', 'RH']]
     df_ct = df_ct.values
 
