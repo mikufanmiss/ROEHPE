@@ -183,7 +183,7 @@ def GEFCom(double=False, window_width=24 * 7 * 2, observe_steps = 24 * 7, zone =
 
     df_ct = df_ct.loc[df_ct['ts'].apply(lambda x: train_start_time <= x < test_end_time )]
 
-    # 由露点温度和干球温度转换成摄氏温度后，计算相对湿度
+    # Calculate relative humidity after converting dew point temperature and dry bulb temperature to degrees Celsius.
     df_ct['RH'] = 100 * ( ((17.27 * ((df_ct['dewpnt'] - 32 )/1.8) ) / (
         ((df_ct['dewpnt'] - 32 )/1.8) + 237.3)).apply(math.exp) / (
         (17.27 * ((df_ct['drybulb'] - 32 )/1.8) ) / (
