@@ -40,8 +40,6 @@ ROEHPE, RRH and Tao do not require consideration of the forecast horizon, and ar
 
 The notebook ```plot.ipynb``` generates figures based on the original results stored in the ```result_record_all``` folder.
 
-```load curve``` contains all the forecast curves for the nine zones.
-
 ### Example
 An example of ROEHPE and benchmarks.
 
